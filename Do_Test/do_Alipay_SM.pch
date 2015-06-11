@@ -1,0 +1,24 @@
+//
+//  do_Alipay_SM.pch
+//  DoAlipay_SM
+//
+//  Created by guoxj on 15/6/10.
+//  Copyright (c) 2015年 DoAlipay. All rights reserved.
+//
+
+#ifndef DoAlipay_SM_do_Alipay_SM_pch
+#define DoAlipay_SM_do_Alipay_SM_pch
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
