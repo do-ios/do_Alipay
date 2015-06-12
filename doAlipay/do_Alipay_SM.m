@@ -38,6 +38,7 @@
      */
     //将商品信息赋予AlixPayOrder的成员变量
     do_Alipay_Order *order = [[do_Alipay_Order alloc] init];
+    NSString *privateKey = _dictParas[@"rsaPrivate"];
     order.partner = _dictParas[@"partner"];
     order.seller = _dictParas[@"sellerId"];
     order.tradeNO = _dictParas[@"tradeNo"]; //订单ID（由商家自行制定）
@@ -59,7 +60,7 @@
     NSString *orderSpec = [order description];
     NSLog(@"orderSpec = %@",orderSpec);
     
-    NSString *privateKey = _dictParas[@"rsaPrivate"];
+
     //获取私钥并将商户信息签名,需要遵循RSA签名规范,并将签名字符串base64编码和UrlEncode
     id<DataSigner> signer = CreateRSADataSigner(privateKey);
     NSString *signedString = [signer signString:orderSpec];
@@ -73,7 +74,6 @@
         [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
             NSString *resultStatus = resultDic[@"resultStatus"];
             NSMutableDictionary *_dict = [[NSMutableDictionary alloc]init];
-            [_dict setValue:@"bd-0911" forKey:@"type"];
             if ([resultStatus  isEqual: @"9000"])
             {
                 [_dict setValue:@"订单支付成功" forKey:@"9000"];
