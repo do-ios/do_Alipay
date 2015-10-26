@@ -10,7 +10,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-#import <Foundation/Foundation.h>
+
 /**
  * \brief          Encode a buffer into base64 format
  *

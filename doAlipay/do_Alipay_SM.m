@@ -15,6 +15,8 @@
 #import "do_Alipay_Order.h"
 #import "do_Alipay_Auth.h"
 #import <AlipaySDK/AlipaySDK.h>
+#import "RSADataSigner.h"
+#import "MD5DataSigner.h"
 
 @implementation do_Alipay_SM
 #pragma mark - 方法
@@ -62,13 +64,15 @@
     
 
     //获取私钥并将商户信息签名,需要遵循RSA签名规范,并将签名字符串base64编码和UrlEncode
-//    id<DataSigner> signer = CreateRSADataSigner(privateKey);
-//    NSString *signedString = [signer signString:orderSpec];
+    RSADataSigner *signer = [[RSADataSigner alloc] initWithPrivateKey:privateKey];
+    NSString *signedString = [signer signString:orderSpec];
+    
+    NSString *AA = [[MD5DataSigner new] algorithmName];
     //将签名成功字符串格式化为订单字符串
     NSString *orderString = nil;
-    if (privateKey != nil) {
+    if (signedString != nil) {
         orderString = [NSString stringWithFormat:@"%@&sign=\"%@\"&sign_type=\"%@\"",
-                       orderSpec, privateKey, @"RSA"];
+                       orderSpec, signedString, @"RSA"];
         
         [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
             NSString *resultStatus = resultDic[@"resultStatus"];

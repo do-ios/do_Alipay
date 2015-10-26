@@ -10,6 +10,7 @@
 #import "doPage.h"
 #import "doService.h"
 #import "doModuleFactory.h"
+#import "do_Alipay_SM.h"
 
 @interface ViewController ()
 {
@@ -87,6 +88,9 @@
 - (void)test0:(UIButton *)sender
 {
     NSLog(@"请添加自己的测试代码");
+    
+    do_Alipay_SM *sm = [do_Alipay_SM new];
+    [sm pay:[NSArray array]];
 }
 - (void)test1:(UIButton *)sender
 {

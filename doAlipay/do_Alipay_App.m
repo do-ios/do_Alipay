@@ -26,14 +26,10 @@ static do_Alipay_App* instance;
 
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
-    if ([url.host isEqualToString:@"safepay"]) {
-        
-        [[AlipaySDK defaultService] processAuth_V2Result:url
-                                         standbyCallback:^(NSDictionary *resultDic) {
-                                             NSLog(@"result = %@",resultDic);
-                                             NSString *resultStr = resultDic[@"result"];
-                                         }];
-    }
+    //跳转支付宝钱包进行支付，处理支付结果
+    [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+        NSLog(@"result = %@",resultDic);
+    }];
     
     return YES;
 }

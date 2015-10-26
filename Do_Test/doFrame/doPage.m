@@ -16,7 +16,7 @@
 @synthesize ScriptEngine;
 @synthesize RootView;
 @synthesize Data;
-@synthesize IsFullScreen;
+//@synthesize IsFullScreen;
 @synthesize SoftMode;
 
 
