@@ -10,7 +10,10 @@
 		77088F191BDA4EF900ECFAB3 /* do_Alipay_App.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A772B6101B27E6170001E1C9 /* do_Alipay_App.h */; };
 		77088F1A1BDA4EF900ECFAB3 /* do_Alipay_ISM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A772B6121B27E6170001E1C9 /* do_Alipay_ISM.h */; };
 		77088F1B1BDA4EF900ECFAB3 /* do_Alipay_SM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A772B6151B27E6170001E1C9 /* do_Alipay_SM.h */; };
-		776765BC1BDBD462008141CF /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B68D1B27E8050001E1C9 /* AlipaySDK.framework */; };
+		77112E1B1BDE32A5008E7CF5 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B68D1B27E8050001E1C9 /* AlipaySDK.framework */; };
+		77112E6F1BDE3CBD008E7CF5 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B68E1B27E8050001E1C9 /* libcrypto.a */; };
+		77112E701BDE3CBD008E7CF5 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B68F1B27E8050001E1C9 /* libssl.a */; };
+		7726013A1BDF5761003ACD2E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEA9A1B00ECF400AED8D5 /* Security.framework */; };
 		776766251BDBE72A008141CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAA21B00ED5800AED8D5 /* QuartzCore.framework */; };
 		776768281BDCB6E0008141CF /* base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 776768181BDCB6E0008141CF /* base64.m */; };
 		776768291BDCB6E0008141CF /* DataSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7767681B1BDCB6E0008141CF /* DataSigner.m */; };
@@ -48,9 +51,7 @@
 		A772B61E1B27E6170001E1C9 /* do_Test.json in Resources */ = {isa = PBXBuildFile; fileRef = A772B6171B27E6170001E1C9 /* do_Test.json */; };
 		A772B6901B27E8050001E1C9 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B68D1B27E8050001E1C9 /* AlipaySDK.framework */; };
 		A772B6921B27E8050001E1C9 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B68E1B27E8050001E1C9 /* libcrypto.a */; };
-		A772B6931B27E8050001E1C9 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B68E1B27E8050001E1C9 /* libcrypto.a */; };
 		A772B6941B27E8050001E1C9 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B68F1B27E8050001E1C9 /* libssl.a */; };
-		A772B6951B27E8050001E1C9 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B68F1B27E8050001E1C9 /* libssl.a */; };
 		A772B6981B27E87A0001E1C9 /* do_Alipay_Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = A772B6971B27E87A0001E1C9 /* do_Alipay_Auth.m */; };
 		A772B6991B27E87A0001E1C9 /* do_Alipay_Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = A772B6971B27E87A0001E1C9 /* do_Alipay_Auth.m */; };
 		A772B69B1B27E8CF0001E1C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B69A1B27E8CF0001E1C9 /* Foundation.framework */; };
@@ -361,10 +362,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7726013A1BDF5761003ACD2E /* Security.framework in Frameworks */,
+				77112E6F1BDE3CBD008E7CF5 /* libcrypto.a in Frameworks */,
+				77112E701BDE3CBD008E7CF5 /* libssl.a in Frameworks */,
+				77112E1B1BDE32A5008E7CF5 /* AlipaySDK.framework in Frameworks */,
 				776766251BDBE72A008141CF /* QuartzCore.framework in Frameworks */,
-				776765BC1BDBD462008141CF /* AlipaySDK.framework in Frameworks */,
-				A772B6931B27E8050001E1C9 /* libcrypto.a in Frameworks */,
-				A772B6951B27E8050001E1C9 /* libssl.a in Frameworks */,
 				A772B6A51B2834AF0001E1C9 /* CoreText.framework in Frameworks */,
 				A772B6A31B2834A30001E1C9 /* CoreTelephony.framework in Frameworks */,
 				A772B6A21B2834930001E1C9 /* CoreGraphics.framework in Frameworks */,
@@ -964,16 +966,16 @@
 		A44BC7C31AEE19CD001580AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)",
 					"$(SRCROOT)/AlipaySDK",
-					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/AlipaySDK",
+					"$(SRCROOT)/../",
+					"$(PROJECT_DIR)/../",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Do_Test/do_Alipay_SM.pch;
@@ -985,12 +987,13 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(SRCROOT)/AlipaySDK",
-					"$(SRCROOT)",
 					"$(PROJECT_DIR)/AlipaySDK",
+					"$(SRCROOT)/AlipaySDK",
+					"$(SRCROOT)/../",
+					"$(PROJECT_DIR)/../",
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_MODULE_NAME = doAlipay_SM;
@@ -1004,16 +1007,16 @@
 		A44BC7C41AEE19CD001580AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)",
 					"$(SRCROOT)/AlipaySDK",
-					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/AlipaySDK",
+					"$(SRCROOT)/../",
+					"$(PROJECT_DIR)/../",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Do_Test/do_Alipay_SM.pch;
@@ -1021,12 +1024,13 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(SRCROOT)/AlipaySDK",
-					"$(SRCROOT)",
 					"$(PROJECT_DIR)/AlipaySDK",
+					"$(SRCROOT)/AlipaySDK",
+					"$(SRCROOT)/../",
+					"$(PROJECT_DIR)/../",
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_MODULE_NAME = doAlipay_SM;
