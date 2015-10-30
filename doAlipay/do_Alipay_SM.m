@@ -15,8 +15,6 @@
 #import "do_Alipay_Order.h"
 #import "do_Alipay_Auth.h"
 #import <AlipaySDK/AlipaySDK.h>
-#import "RSADataSigner.h"
-#import "MD5DataSigner.h"
 
 @implementation do_Alipay_SM
 #pragma mark - 方法
@@ -56,7 +54,7 @@
     order.showUrl = @"m.alipay.com";
     
     //应用注册scheme,在AlixPayDemo-Info.plist定义URL types
-    NSString *appScheme = @"alipay";
+    NSString *appScheme = [NSString stringWithFormat:@"alipay%@",order.partner];
     
     //将商品信息拼接成字符串
     NSString *orderSpec = [order description];
@@ -64,7 +62,7 @@
     
 
     //获取私钥并将商户信息签名,需要遵循RSA签名规范,并将签名字符串base64编码和UrlEncode
-    RSADataSigner *signer = [[RSADataSigner alloc] initWithPrivateKey:privateKey];
+    id<DataSigner> signer = CreateRSADataSigner(privateKey);
     NSString *signedString = [signer signString:orderSpec];
 
     //将签名成功字符串格式化为订单字符串
