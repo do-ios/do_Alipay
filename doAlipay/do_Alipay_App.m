@@ -23,7 +23,6 @@ static do_Alipay_App* instance;
 {
     return YES;
 }
-
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
     //跳转支付宝钱包进行支付，处理支付结果

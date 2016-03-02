@@ -14,6 +14,7 @@
 #import "DataSigner.h"
 #import "do_Alipay_Order.h"
 #import "do_Alipay_Auth.h"
+#import "do_Alipay_App.h"
 #import <AlipaySDK/AlipaySDK.h>
 
 @implementation do_Alipay_SM
@@ -56,6 +57,8 @@
     //应用注册scheme,在AlixPayDemo-Info.plist定义URL types
     NSString *appScheme = [NSString stringWithFormat:@"alipay%@",order.partner];
     
+    do_Alipay_App *alipay = [do_Alipay_App Instance];
+    alipay.OpenURLScheme = appScheme;
     //将商品信息拼接成字符串
     NSString *orderSpec = [order description];
     NSLog(@"orderSpec = %@",orderSpec);

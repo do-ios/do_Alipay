@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		77088F191BDA4EF900ECFAB3 /* do_Alipay_App.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A772B6101B27E6170001E1C9 /* do_Alipay_App.h */; };
-		77088F1A1BDA4EF900ECFAB3 /* do_Alipay_ISM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A772B6121B27E6170001E1C9 /* do_Alipay_ISM.h */; };
 		77088F1B1BDA4EF900ECFAB3 /* do_Alipay_SM.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A772B6151B27E6170001E1C9 /* do_Alipay_SM.h */; };
 		77112E1B1BDE32A5008E7CF5 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B68D1B27E8050001E1C9 /* AlipaySDK.framework */; };
 		77112E6F1BDE3CBD008E7CF5 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B68E1B27E8050001E1C9 /* libcrypto.a */; };
@@ -56,7 +55,6 @@
 		A772B6991B27E87A0001E1C9 /* do_Alipay_Auth.m in Sources */ = {isa = PBXBuildFile; fileRef = A772B6971B27E87A0001E1C9 /* do_Alipay_Auth.m */; };
 		A772B69B1B27E8CF0001E1C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B69A1B27E8CF0001E1C9 /* Foundation.framework */; };
 		A772B69C1B27E9080001E1C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEA9E1B00ED3000AED8D5 /* SystemConfiguration.framework */; };
-		A772B69D1B27E93F0001E1C9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEABC1B00EF2000AED8D5 /* libz.dylib */; };
 		A772B69F1B27F60E0001E1C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A772B69E1B27F60E0001E1C9 /* UIKit.framework */; };
 		A772B6A21B2834930001E1C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEA9C1B00ED1C00AED8D5 /* CoreGraphics.framework */; };
 		A772B6A31B2834A30001E1C9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEABA1B00EF0C00AED8D5 /* CoreTelephony.framework */; };
@@ -71,20 +69,12 @@
 		CCFAEAA11B00ED4600AED8D5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAA01B00ED4600AED8D5 /* OpenGLES.framework */; };
 		CCFAEAA31B00ED5800AED8D5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAA21B00ED5800AED8D5 /* QuartzCore.framework */; };
 		CCFAEAA51B00ED6B00AED8D5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAA41B00ED6B00AED8D5 /* CoreLocation.framework */; };
-		CCFAEAA71B00ED8700AED8D5 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAA61B00ED8700AED8D5 /* libresolv.dylib */; };
-		CCFAEAA91B00ED9A00AED8D5 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAA81B00ED9A00AED8D5 /* libstdc++.6.0.9.dylib */; };
 		CCFAEAAB1B00EDAB00AED8D5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAAA1B00EDAB00AED8D5 /* CFNetwork.framework */; };
 		CCFAEAAD1B00EDBD00AED8D5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAAC1B00EDBD00AED8D5 /* MobileCoreServices.framework */; };
-		CCFAEAAF1B00EDE200AED8D5 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAAE1B00EDE200AED8D5 /* libiconv.dylib */; };
-		CCFAEAB11B00EDF600AED8D5 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAB01B00EDF600AED8D5 /* libxml2.dylib */; };
-		CCFAEAB31B00EE0700AED8D5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAB21B00EE0700AED8D5 /* libsqlite3.dylib */; };
 		CCFAEAB51B00EE1D00AED8D5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAB41B00EE1D00AED8D5 /* AVFoundation.framework */; };
 		CCFAEAB71B00EE2F00AED8D5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAB61B00EE2F00AED8D5 /* MessageUI.framework */; };
 		CCFAEAB91B00EED800AED8D5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAB81B00EED800AED8D5 /* AudioToolbox.framework */; };
 		CCFAEABB1B00EF0C00AED8D5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEABA1B00EF0C00AED8D5 /* CoreTelephony.framework */; };
-		CCFAEABD1B00EF2000AED8D5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEABC1B00EF2000AED8D5 /* libz.dylib */; };
-		CCFAEABF1B00EF4800AED8D5 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEABE1B00EF4800AED8D5 /* libstdc++.dylib */; };
-		CCFAEAC11B00EF6300AED8D5 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAC01B00EF6300AED8D5 /* libicucore.dylib */; };
 		CCFAEAC31B00EF6A00AED8D5 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFAEAC21B00EF6A00AED8D5 /* JavaScriptCore.framework */; };
 		CCFAEAC81B0182C600AED8D5 /* doDataFs.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFAEAC71B0182C600AED8D5 /* doDataFs.m */; };
 		CCFAEB3F1B046D8300AED8D5 /* doModuleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFAEB3E1B046D8300AED8D5 /* doModuleFactory.m */; };
@@ -98,7 +88,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 				77088F191BDA4EF900ECFAB3 /* do_Alipay_App.h in CopyFiles */,
-				77088F1A1BDA4EF900ECFAB3 /* do_Alipay_ISM.h in CopyFiles */,
 				77088F1B1BDA4EF900ECFAB3 /* do_Alipay_SM.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +95,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B8C70BC1C86C00B00664D0D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3B8C70BE1C86C01500664D0D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		7767646D1BDBA4E0008141CF /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
 		7767646E1BDBA4E0008141CF /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
 		7767646F1BDBA4E0008141CF /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
@@ -303,20 +294,12 @@
 		CCFAEAA01B00ED4600AED8D5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		CCFAEAA21B00ED5800AED8D5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CCFAEAA41B00ED6B00AED8D5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		CCFAEAA61B00ED8700AED8D5 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
-		CCFAEAA81B00ED9A00AED8D5 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		CCFAEAAA1B00EDAB00AED8D5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CCFAEAAC1B00EDBD00AED8D5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		CCFAEAAE1B00EDE200AED8D5 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
-		CCFAEAB01B00EDF600AED8D5 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		CCFAEAB21B00EE0700AED8D5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CCFAEAB41B00EE1D00AED8D5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CCFAEAB61B00EE2F00AED8D5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		CCFAEAB81B00EED800AED8D5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CCFAEABA1B00EF0C00AED8D5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		CCFAEABC1B00EF2000AED8D5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		CCFAEABE1B00EF4800AED8D5 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		CCFAEAC01B00EF6300AED8D5 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		CCFAEAC21B00EF6A00AED8D5 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		CCFAEAC61B0182C600AED8D5 /* doDataFs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doDataFs.h; sourceTree = "<group>"; };
 		CCFAEAC71B0182C600AED8D5 /* doDataFs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doDataFs.m; sourceTree = "<group>"; };
@@ -330,22 +313,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCFAEAC31B00EF6A00AED8D5 /* JavaScriptCore.framework in Frameworks */,
-				CCFAEAC11B00EF6300AED8D5 /* libicucore.dylib in Frameworks */,
-				CCFAEABF1B00EF4800AED8D5 /* libstdc++.dylib in Frameworks */,
-				CCFAEABD1B00EF2000AED8D5 /* libz.dylib in Frameworks */,
 				CCFAEABB1B00EF0C00AED8D5 /* CoreTelephony.framework in Frameworks */,
 				CCFAEAB91B00EED800AED8D5 /* AudioToolbox.framework in Frameworks */,
 				CCFAEAB71B00EE2F00AED8D5 /* MessageUI.framework in Frameworks */,
 				CCEB2B001B09D9C700949C58 /* libDoCore.a in Frameworks */,
 				CCFAEAB51B00EE1D00AED8D5 /* AVFoundation.framework in Frameworks */,
-				CCFAEAB31B00EE0700AED8D5 /* libsqlite3.dylib in Frameworks */,
-				CCFAEAB11B00EDF600AED8D5 /* libxml2.dylib in Frameworks */,
 				A772B6921B27E8050001E1C9 /* libcrypto.a in Frameworks */,
-				CCFAEAAF1B00EDE200AED8D5 /* libiconv.dylib in Frameworks */,
 				CCFAEAAD1B00EDBD00AED8D5 /* MobileCoreServices.framework in Frameworks */,
 				CCFAEAAB1B00EDAB00AED8D5 /* CFNetwork.framework in Frameworks */,
-				CCFAEAA91B00ED9A00AED8D5 /* libstdc++.6.0.9.dylib in Frameworks */,
-				CCFAEAA71B00ED8700AED8D5 /* libresolv.dylib in Frameworks */,
 				CCFAEAA51B00ED6B00AED8D5 /* CoreLocation.framework in Frameworks */,
 				A772B6901B27E8050001E1C9 /* AlipaySDK.framework in Frameworks */,
 				CCFAEAA31B00ED5800AED8D5 /* QuartzCore.framework in Frameworks */,
@@ -371,7 +346,6 @@
 				A772B6A31B2834A30001E1C9 /* CoreTelephony.framework in Frameworks */,
 				A772B6A21B2834930001E1C9 /* CoreGraphics.framework in Frameworks */,
 				A772B69F1B27F60E0001E1C9 /* UIKit.framework in Frameworks */,
-				A772B69D1B27E93F0001E1C9 /* libz.dylib in Frameworks */,
 				A772B69C1B27E9080001E1C9 /* SystemConfiguration.framework in Frameworks */,
 				A772B69B1B27E8CF0001E1C9 /* Foundation.framework in Frameworks */,
 			);
@@ -491,6 +465,8 @@
 		A44BC6611AEE005E001580AA = {
 			isa = PBXGroup;
 			children = (
+				3B8C70BE1C86C01500664D0D /* libc++.tbd */,
+				3B8C70BC1C86C00B00664D0D /* libz.tbd */,
 				77C22D151BDCE250008D6DD2 /* AlipaySDK.bundle */,
 				A772B6A41B2834AF0001E1C9 /* CoreText.framework */,
 				CCFAEAC51B00F00C00AED8D5 /* lib */,
@@ -655,25 +631,17 @@
 			isa = PBXGroup;
 			children = (
 				CCFAEAC21B00EF6A00AED8D5 /* JavaScriptCore.framework */,
-				CCFAEAC01B00EF6300AED8D5 /* libicucore.dylib */,
-				CCFAEABE1B00EF4800AED8D5 /* libstdc++.dylib */,
 				A772B68D1B27E8050001E1C9 /* AlipaySDK.framework */,
 				A772B68E1B27E8050001E1C9 /* libcrypto.a */,
 				A772B68F1B27E8050001E1C9 /* libssl.a */,
-				CCFAEABC1B00EF2000AED8D5 /* libz.dylib */,
 				A772B69E1B27F60E0001E1C9 /* UIKit.framework */,
 				A772B69A1B27E8CF0001E1C9 /* Foundation.framework */,
 				CCFAEABA1B00EF0C00AED8D5 /* CoreTelephony.framework */,
 				CCFAEAB81B00EED800AED8D5 /* AudioToolbox.framework */,
 				CCFAEAB61B00EE2F00AED8D5 /* MessageUI.framework */,
 				CCFAEAB41B00EE1D00AED8D5 /* AVFoundation.framework */,
-				CCFAEAB21B00EE0700AED8D5 /* libsqlite3.dylib */,
-				CCFAEAB01B00EDF600AED8D5 /* libxml2.dylib */,
-				CCFAEAAE1B00EDE200AED8D5 /* libiconv.dylib */,
 				CCFAEAAC1B00EDBD00AED8D5 /* MobileCoreServices.framework */,
 				CCFAEAAA1B00EDAB00AED8D5 /* CFNetwork.framework */,
-				CCFAEAA81B00ED9A00AED8D5 /* libstdc++.6.0.9.dylib */,
-				CCFAEAA61B00ED8700AED8D5 /* libresolv.dylib */,
 				CCFAEAA41B00ED6B00AED8D5 /* CoreLocation.framework */,
 				CCFAEAA21B00ED5800AED8D5 /* QuartzCore.framework */,
 				CCFAEAA01B00ED4600AED8D5 /* OpenGLES.framework */,
