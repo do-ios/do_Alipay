@@ -78,24 +78,28 @@
             NSMutableDictionary *_dict = [[NSMutableDictionary alloc]init];
             if ([resultStatus  isEqual: @"9000"])
             {
-                [_dict setValue:@"订单支付成功" forKey:@"9000"];
-
+                [_dict setValue:@"订单支付成功" forKey:@"msg"];
+                [_dict setObject:@"9000" forKey:@"code"];
             }
             else if ([resultStatus  isEqual: @"8000"])
             {
-                [_dict setValue:@"正在处理中" forKey:@"8000"];
+                [_dict setValue:@"正在处理中" forKey:@"msg"];
+                [_dict setObject:@"8000" forKey:@"code"];
             }
             else if ([resultStatus  isEqual: @"4000"])
             {
-                [_dict setValue:@"订单支付失败" forKey:@"4000"];
+                [_dict setValue:@"订单支付失败" forKey:@"msg"];
+                [_dict setObject:@"4000" forKey:@"code"];
             }
             else if ([resultStatus  isEqual: @"6001"])
             {
-                [_dict setValue:@"用户中途取消" forKey:@"6001"];
+                [_dict setValue:@"用户中途取消" forKey:@"msg"];
+                [_dict setObject:@"6001" forKey:@"code"];
             }
             else if ([resultStatus  isEqual: @"6002"])
             {
-                [_dict setValue:@"网络连接出错" forKey:@"6002"];
+                [_dict setValue:@"网络连接出错" forKey:@"msg"];
+                [_dict setObject:@"6002" forKey:@"code"];
             }
             [_invokeResult SetResultNode: _dict];
             [_scritEngine Callback:_callbackName :_invokeResult];
